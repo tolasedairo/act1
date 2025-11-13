@@ -1,1 +1,1 @@
-# act1
+# testing how to connect git with VSC and all the neccessary commands in git.
