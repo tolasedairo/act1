@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Positioning Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>CSS Positioning Challenge</h1>
+      <p class="lead">Practice <strong>static, relative, absolute, fixed, sticky</strong> and <strong>z-index</strong>. Edit <code>styles.css</code> to complete each task. No JavaScript required.</p>
+    </header>git
+
+
+    <section class="instructions">
+      <h2>Tasks</h2>
+      <ol>
+        <li>Center the blue box both vertically and horizontally inside the canvas (use absolute positioning + transform, or other positioning techniques).</li>
+        <li>Make the yellow box stick to the top of the viewport when you scroll (use <code>position: sticky</code>).</li>
+        <li>Fix the green box to the bottom-right corner of the viewport (use <code>position: fixed</code>).</li>
+        <li>Offset the orange box 30px downward and 20px to the right relative to its normal position (use <code>position: relative</code>).</li>
+        <li>Raise the purple box above the red box using <code>z-index</code> so the purple overlaps on top.</li>
+      </ol>
+
+
+      <details>
+        <summary>Hints</summary>
+        <ul>
+          <li>Use the class names in the canvas to target elements: <code>.center-box</code>, <code>.sticky-box</code>, <code>.fixed-box</code>, <code>.relative-box</code>, <code>.red</code>, <code>.purple</code>.</li>
+          <li>Open <code>solution.css</code> to check an example solution once you've tried the challenge.</li>
+        </ul>
+      </details>
+    </section>
+
+
+    <section class="canvas-wrap">
+      <h2>Canvas</h2>
+      <p class="note">Resize the window and scroll to observe fixed/sticky behavior.</p>
+      <div class="canvas">
+        <!-- A container for absolute-positioning exercises -->
+        <div class="box center-box">Center me</div>
+
+
+        <!-- Sticky box placed at top of the canvas; should become stuck to the viewport top when scrolled -->
+        <div class="box sticky-box">I'm sticky</div>
+
+
+        <!-- Fixed box to stick to viewport bottom-right -->
+        <div class="box fixed-box">Fixed</div>
+
+
+        <!-- Relative offset example -->
+        <div class="box relative-box">Relative</div>
+
+
+        <!-- Overlapping boxes to demonstrate z-index -->
+        <div class="box red">Red (below)</div>
+        <div class="box purple">Purple (should be above)</div>
+
+
+        <!-- fillers to allow scrolling -->
+        <div class="spacer"></div>
+      </div>
+    </section>
+
+
+    <footer>
+      <p>When done, compare your edits in <code>styles.css</code> with <code>solution.css</code>.</p>
+    </footer>
+  </main>
+</body>
+</html>

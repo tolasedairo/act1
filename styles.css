@@ -1,0 +1,93 @@
+/* styles.css - Starter file for the positioning challenge
+   Edit the blocks marked TODO to complete each task. */
+
+
+:root{
+  --bg: #f7f9fb;
+  --muted: #6b7280;
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+}
+
+
+.page{max-width:980px;margin:24px auto;padding:16px}
+header h1{margin:.2rem 0}
+.lead{margin-top:0;color:var(--muted)}
+.instructions{background:#fff;padding:16px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+.instructions ol{margin:8px 0 0 1.25rem}
+
+
+.canvas-wrap{margin-top:18px}
+.canvas{position:relative;min-height:560px;background:linear-gradient(#fff,#f3f6fb);border:1px dashed #d1d5db;padding:24px;border-radius:8px;overflow:auto}
+
+
+.box{width:120px;height:80px;border-radius:6px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;margin:12px}
+
+
+/* ===== Starter positions (change these) ===== */
+
+
+.center-box{
+  /* TODO 1: Center this box inside .canvas (both axes). Replace or update these rules. */
+  position:absolute; /* you may use absolute + transform, or other method */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#2563eb;
+  
+}
+
+
+.sticky-box{
+  /* TODO 2: Make this element sticky to the top of the viewport when scrolling. */
+  position:sticky;
+  background:#f59e0b;
+}
+
+
+.fixed-box{
+  /* TODO 3: Fix this element to the bottom-right of the viewport. */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #10b981;
+}
+
+
+.relative-box{
+  /* TODO 4: Offset this element 30px down and 20px right relative to where it would normally sit. */
+  position: relative;
+  background:#fb923c;
+  margin-top: 30px;
+  margin-left: 20px;
+    /*position: relative;
+    top: 30px;
+    left: 20px;
+    background: #fb923c;*/
+}
+
+
+/* Overlap stack: There's a red box and a purple box. Raise purple above red. */
+.red{background:#ef4444;position:relative;left:40px;top:70px}
+.purple{background:#7c3aed;position:relative;left:60px;top:-90px}
+
+
+/* Spacer to allow scrolling and to show sticky/fixed effects */
+.spacer{height:1200px}
+
+
+/* Helpful visuals */
+.note{color:var(--muted);font-size:.95rem}
+footer{margin-top:16px;color:var(--muted);font-size:.95rem}
+
+
+/* End of starter file */
