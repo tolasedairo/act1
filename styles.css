@@ -50,6 +50,8 @@ header h1{margin:.2rem 0}
 .sticky-box{
   /* TODO 2: Make this element sticky to the top of the viewport when scrolling. */
   position:sticky;
+  top: 0;
+  left: 0;
   background:#f59e0b;
 }
 
@@ -67,18 +69,26 @@ header h1{margin:.2rem 0}
   /* TODO 4: Offset this element 30px down and 20px right relative to where it would normally sit. */
   position: relative;
   background:#fb923c;
-  margin-top: 30px;
-  margin-left: 20px;
-    /*position: relative;
-    top: 30px;
-    left: 20px;
-    background: #fb923c;*/
+  top: 30px;
+  left: 20px;
 }
 
 
 /* Overlap stack: There's a red box and a purple box. Raise purple above red. */
-.red{background:#ef4444;position:relative;left:40px;top:70px}
-.purple{background:#7c3aed;position:relative;left:60px;top:-90px}
+.red {
+    background:#ef4444;
+    position:relative;
+    left:40px;
+    top:70px;
+}
+
+.purple {
+    background:#7c3aed;
+    position:relative;
+    left:60px;
+    top: 40px;
+    z-index: 1;
+}
 
 
 /* Spacer to allow scrolling and to show sticky/fixed effects */
